@@ -9,15 +9,15 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="box-logo">
         <img src="./images/logo.png" alt="Ícone de reciclagem" />
         <h1>ReciclaTech</h1>
       </div>
       <nav class="navbar">
         <ul>
-          <li><a href="#">Como funciona</a></li>
-          <li><a href="#">Doar</a></li>
-          <li><a href="#">Adquirir</a></li>
+          <li><a class="link-nav" href="#">Como funciona</a></li>
+          <li><a class="link-nav" href="#">Doar</a></li>
+          <li><a class="link-nav" href="#">Adquirir</a></li>
           <li class="btn-nav">
             <a class="btn-text" href="#"> Começar agora</a>
           </li>
@@ -26,29 +26,46 @@
     </header>
     <main>
       <section class="container-main">
-        <div class="box-text">
-          <h2>Dê uma segunda vida aos seus eletrônicos!</h2>
-          <p>
-            Conectamos pessoas que querem doar eletrônicos em bom estado com
-            quem precisa deles. Simples, gratuito e sustentável!
-          </p>
+        <div class="box-main">
+          <div class="box-text">
+            <h2>Dê uma segunda vida aos seus eletrônicos!</h2>
+            <p>
+              Conectamos pessoas que querem doar eletrônicos em bom estado com
+              quem precisa deles. Simples, gratuito e sustentável!
+            </p>
+          </div>
+          <div class="box-btn">
+            <button class="btn-green">
+              Quero Doar
+              <img src="./images/presente.svg" alt="Ícone de presente" />
+            </button>
+            <button class="btn-blue">
+              Quero Adquirir
+              <img src="./images/coracao.svg" alt="Ícone de coração" />
+            </button>
+          </div>
         </div>
-        <div class="box-btn">
-          <button class="btn-green">
-            Quero Doar
-            <img src="./images/presente.svg" alt="Ícone de presente" />
-          </button>
-          <button class="btn-blue">
-            Quero Adquirir
-            <img src="./images/coracao.svg" alt="Ícone de coração" />
-          </button>
+        <img
+          class="img-main"
+          src="./images/reciclagem.png"
+          alt="Imagem de um símbolo de reciclagem"
+        />
+      </section>
+
+      <section class="container-results">
+        <div class="box-results">
+          <h2>2.5k</h2>
+          <p>Eletrônicos doados</p>
+        </div>
+        <div class="box-results">
+          <h2>1.8k</h2>
+          <p>Famílias beneficiadas</p>
+        </div>
+        <div class="box-results">
+          <h2>95%</h2>
+          <p>Satisfação dos usuários</p>
         </div>
       </section>
-      <img
-        class="img-main"
-        src="./images/reciclagem.png"
-        alt="Imagem de um símbolo de reciclagem"
-      />
     </main>
   </body>
 </html>
