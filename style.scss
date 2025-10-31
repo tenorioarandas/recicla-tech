@@ -28,8 +28,8 @@ header {
   div {
     display: flex;
     align-items: center;
-    width: 20%;
     justify-content: space-around;
+    width: 17%;
   }
 
   h1 {
@@ -44,15 +44,17 @@ header {
 
   ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
 
     li {
       height: 5vh;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
 
       a {
         color: $subtitle-color;
@@ -66,9 +68,10 @@ header {
 
 .btn-nav {
   background-color: $bg-lightgreen;
-  padding: 2rem;
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  padding: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
 
   .btn-text {
     color: #ffff;
@@ -77,4 +80,68 @@ header {
 
 .btn-nav:hover {
   background-color: $bg-green;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 55vh;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 4.5rem;
+    }
+
+    p {
+      color: $subtitle-color;
+      font-family: $secondary-font;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+    }
+
+    .box-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+      height: 30%;
+
+      button {
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 0.5rem;
+      }
+
+      .btn-green {
+        background-color: $bg-green;
+        color: #ffff;
+        border: none;
+        display: flex;
+      }
+
+      .btn-blue {
+        background-color: #ffff;
+        color: $bg-blue;
+        border: solid 2px $bg-blue;
+        display: flex;
+      }
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .img-main {
+    width: 30vw;
+  }
 }
