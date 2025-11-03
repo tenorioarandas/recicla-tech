@@ -18,8 +18,9 @@ header {
 header .box-logo {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 17%;
+  justify-content: center;
+  width: 20%;
+  gap: 1rem;
 }
 header h1 {
   font-family: "Poppins", sans-serif;
@@ -28,7 +29,7 @@ header h1 {
 }
 
 .navbar {
-  width: 40%;
+  width: 45%;
 }
 .navbar ul {
   display: flex;
@@ -75,7 +76,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main .container-main {
+main .section-hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -83,60 +84,69 @@ main .container-main {
   height: 65vh;
   margin: 0.5rem 0;
 }
-main .container-main h2 {
+main .section-hero h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
+  font-size: 5em;
+  color: #1f2937;
+  width: 90%;
 }
-main .container-main p {
+main .section-hero .green-text {
+  color: #21c05c;
+}
+main .section-hero p {
   color: #4b5563;
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   margin-top: 1rem;
-  width: 70%;
+  width: 80%;
 }
-main .container-main .box-main {
+main .section-hero .container {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-around;
-  width: 75%;
+  width: 60%;
   height: inherit;
 }
-main .container-main .box-text {
+main .section-hero .box-text {
   width: 100%;
 }
-main .container-main .box-btn {
+main .section-hero .box-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 50%;
 }
-main .container-main .box-btn button {
+main .section-hero .box-btn button {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1.5rem;
   gap: 0.5rem;
 }
-main .container-main .box-btn .btn-green {
-  background-color: #16a34a;
-  color: white;
-  border: none;
+main .section-hero .box-btn .btn-green {
+  background-color: white;
+  color: #16a34a;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px #16a34a;
 }
-main .container-main .box-btn .btn-blue {
+main .section-hero .box-btn .btn-blue {
   background-color: white;
   color: #2563eb;
-  border: solid 2px #2563eb;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px #2563eb;
 }
-main .container-main .box-btn img {
+main .section-hero .box-btn img {
   display: block;
 }
 main .img-main {
   width: 35vw;
 }
-main .container-results {
+main .section-results {
   font-family: "Poppins", sans-serif;
   background-color: #f3f5f8;
   display: flex;
@@ -144,13 +154,104 @@ main .container-results {
   justify-content: space-around;
   text-align: center;
   width: 100%;
-  height: 19vh;
+  height: 20vh;
 }
-main .container-results h2 {
+main .section-results h2 {
   color: #16a34a;
   font-size: 2.8rem;
 }
-main .container-results p {
+main .section-results p {
   color: #4b5563;
   font-size: 1.4rem;
+}
+
+.section-flow {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.section-flow .box-text {
+  width: 72%;
+}
+.section-flow .box-text h2 {
+  color: #1f2937;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+}
+.section-flow .box-text p {
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+.section-flow .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 65%;
+}
+.section-flow .container .cards {
+  background-color: #f3f5f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 40%;
+  height: 100%;
+  border: solid green;
+}
+.section-flow .container .cards .cards-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.section-flow .container .cards .cards-title h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+.section-flow .container .cards ol {
+  border: solid blue;
+  height: 60%;
+}
+.section-flow .container .cards li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+.section-flow .container .cards p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+}
+.section-flow .container .card-donors .cards-title {
+  color: #16a34a;
+}
+.section-flow .container .card-donors .icon-circle {
+  background-color: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+.section-flow .container .card-donors img {
+  width: 1.3vw;
+}
+.section-flow .container .card-acquirers .cards-title {
+  color: #2563eb;
+  width: 55%;
+}
+.section-flow .container .card-acquirers .icon-circle {
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+.section-flow .container .card-acquirers img {
+  width: 1.2vw;
 }/*# sourceMappingURL=style.css.map */

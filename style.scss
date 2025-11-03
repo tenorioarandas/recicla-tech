@@ -10,9 +10,9 @@
 
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "Inter", sans-serif;
-$title-color: #1f2937;
-$subtitle-color: #4b5563;
-$bg-white: #f3f5f8;
+$primary-color: #1f2937;
+$secondary-color: #4b5563;
+$bg-lightgrey: #f3f5f8;
 $bg-green: #16a34a;
 $bg-lightgreen: #21c05c;
 $bg-blue: #2563eb;
@@ -28,19 +28,20 @@ header {
   .box-logo {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 17%;
+    justify-content: center;
+    width: 20%;
+    gap: 1rem;
   }
 
   h1 {
     font-family: $primary-font;
     font-size: 2.5rem;
-    color: $title-color;
+    color: $primary-color;
   }
 }
 
 .navbar {
-  width: 40%;
+  width: 45%;
 
   ul {
     display: flex;
@@ -57,7 +58,7 @@ header {
       overflow: hidden;
 
       a {
-        color: $subtitle-color;
+        color: $secondary-color;
         font-family: $primary-font;
         font-size: 1.4rem;
         font-weight: 400;
@@ -92,7 +93,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  .container-main {
+  .section-hero {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -102,23 +103,29 @@ main {
 
     h2 {
       font-family: $primary-font;
-      font-size: 5rem;
+      font-size: 5em;
+      color: $primary-color;
+      width: 90%;
+    }
+
+    .green-text {
+      color: $bg-lightgreen;
     }
 
     p {
-      color: $subtitle-color;
+      color: $secondary-color;
       font-family: $secondary-font;
       font-size: 1.6rem;
       margin-top: 1rem;
-      width: 70%;
+      width: 80%;
     }
 
-    .box-main {
+    .container {
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: space-around;
-      width: 75%;
+      width: 60%;
       height: inherit;
     }
 
@@ -136,22 +143,26 @@ main {
         font-family: $primary-font;
         font-size: 1.4rem;
         border-radius: 10px;
-        padding: 2rem;
+        padding: 1.5rem;
         gap: 0.5rem;
       }
 
       .btn-green {
-        background-color: $bg-green;
-        color: #ffff;
-        border: none;
+        background-color: #ffff;
+        color: $bg-green;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 2px $bg-green;
       }
 
       .btn-blue {
         background-color: #ffff;
         color: $bg-blue;
-        border: solid 2px $bg-blue;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 2px $bg-blue;
       }
 
       img {
@@ -164,15 +175,15 @@ main {
     width: 35vw;
   }
 
-  .container-results {
+  .section-results {
     font-family: $primary-font;
-    background-color: $bg-white;
+    background-color: $bg-lightgrey;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     width: 100%;
-    height: 19vh;
+    height: 20vh;
 
     h2 {
       color: $bg-green;
@@ -180,8 +191,119 @@ main {
     }
 
     p {
-      color: $subtitle-color;
+      color: $secondary-color;
       font-size: 1.4rem;
+    }
+  }
+}
+
+.section-flow {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  .box-text {
+    width: 72%;
+
+    h2 {
+      color: $primary-color;
+      font-family: $primary-font;
+      font-size: 3.2rem;
+    }
+
+    p {
+      color: $secondary-color;
+      font-family: $secondary-font;
+      font-size: 1.8rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 65%;
+
+    .cards {
+      background-color: $bg-lightgrey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px;
+      width: 40%;
+      height: 100%;
+      border: solid green;
+
+      .cards-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+
+        h3 {
+          font-family: $primary-font;
+          font-size: 1.8rem;
+        }
+      }
+
+      ol {
+        border: solid blue;
+        height: 60%;
+      }
+
+      li {
+        font-family: $primary-font;
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-family: $secondary-font;
+        font-size: 1.4rem;
+      }
+    }
+
+    .card-donors {
+      .cards-title {
+        color: $bg-green;
+      }
+
+      .icon-circle {
+        background-color: #dcfce7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 1.3vw;
+      }
+    }
+
+    .card-acquirers {
+      .cards-title {
+        color: $bg-blue;
+        width: 55%;
+      }
+
+      .icon-circle {
+        background-color: #dbeafe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 1.2vw;
+      }
     }
   }
 }
