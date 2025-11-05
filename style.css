@@ -36,6 +36,7 @@ header h1 {
   align-items: center;
   justify-content: space-around;
   height: 100%;
+  list-style: none;
 }
 .navbar ul li {
   height: 5vh;
@@ -164,8 +165,7 @@ main .section-results p {
   color: #4b5563;
   font-size: 1.4rem;
 }
-
-.section-flow {
+main .section-flow {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -174,62 +174,98 @@ main .section-results p {
   width: 100%;
   height: 100vh;
 }
-.section-flow .box-text {
-  width: 72%;
+main .section-flow .box-text {
+  width: 100%;
+  padding-left: 8rem;
 }
-.section-flow .box-text h2 {
+main .section-flow .box-text h2 {
   color: #1f2937;
   font-family: "Poppins", sans-serif;
   font-size: 3.2rem;
+  margin-bottom: 2rem;
 }
-.section-flow .box-text p {
+main .section-flow .box-text p {
   color: #4b5563;
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
-.section-flow .container {
+main .section-flow .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 80%;
   height: 65%;
 }
-.section-flow .container .cards {
+main .section-flow .container .cards {
   background-color: #f3f5f8;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 10px;
+  padding: 2rem 2rem 2rem 3.5rem;
   width: 40%;
   height: 100%;
-  border: solid green;
 }
-.section-flow .container .cards .cards-title {
+main .section-flow .container .cards .cards-title {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: start;
+  width: 100%;
+  gap: 1rem;
 }
-.section-flow .container .cards .cards-title h3 {
+main .section-flow .container .cards .cards-title h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
-.section-flow .container .cards ol {
-  border: solid blue;
-  height: 60%;
-}
-.section-flow .container .cards li {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-}
-.section-flow .container .cards p {
+main .section-flow .container .cards .subtitle {
+  color: #4b5563;
   font-family: "Inter", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
-.section-flow .container .card-donors .cards-title {
+main .section-flow .container .cards ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  width: 90%;
+  height: 65%;
+}
+main .section-flow .container .cards ol li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+main .section-flow .container .cards ol li .number-circle {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+}
+main .section-flow .container .cards ol li .number-circle--green {
+  background-color: #16a34a;
+}
+main .section-flow .container .cards ol li .number-circle--blue {
+  background-color: #2563eb;
+}
+main .section-flow .container .cards ol .list-title {
+  color: #1f2937;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+main .section-flow .container .cards ol .list-subtitle {
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+main .section-flow .container .card-donors .cards-title {
   color: #16a34a;
 }
-.section-flow .container .card-donors .icon-circle {
+main .section-flow .container .card-donors .icon-circle {
   background-color: #dcfce7;
   display: flex;
   align-items: center;
@@ -237,14 +273,13 @@ main .section-results p {
   border-radius: 100%;
   padding: 0.5rem;
 }
-.section-flow .container .card-donors img {
-  width: 1.3vw;
+main .section-flow .container .card-donors img {
+  width: 2vw;
 }
-.section-flow .container .card-acquirers .cards-title {
+main .section-flow .container .card-acquirers .cards-title {
   color: #2563eb;
-  width: 55%;
 }
-.section-flow .container .card-acquirers .icon-circle {
+main .section-flow .container .card-acquirers .icon-circle {
   background-color: #dbeafe;
   display: flex;
   align-items: center;
@@ -252,6 +287,78 @@ main .section-results p {
   border-radius: 100%;
   padding: 0.5rem;
 }
-.section-flow .container .card-acquirers img {
-  width: 1.2vw;
+main .section-flow .container .card-acquirers img {
+  width: 1.8vw;
+}
+main .section-products {
+  background-color: #f3f5f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
+}
+main .section-products .box-text {
+  padding-left: 8rem;
+}
+main .section-products .box-text h3 {
+  color: #1f2937;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  margin-top: 1rem;
+}
+main .section-products .box-text p {
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+main .section-products .box-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+}
+main .section-products .box-images figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+main .section-products .box-images figure img {
+  width: 20vw;
+}
+main .section-products .box-images figure figcaption {
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+main .section-products .box-images figure p {
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  width: 15vw;
+  height: 9vh;
+  margin-top: 1.5rem;
+}
+main .section-products .box-images figure button {
+  background-color: #21c05c;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .section-products .box-images figure button:hover {
+  background-color: #16a34a;
 }/*# sourceMappingURL=style.css.map */
