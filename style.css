@@ -61,7 +61,7 @@ header h1 {
   background-color: #21c05c;
   border-radius: 10px;
   padding: 2rem;
-  transition: 0.3s;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 .btn-nav .btn-text {
@@ -70,6 +70,7 @@ header h1 {
 
 .btn-nav:hover {
   background-color: #16a34a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -356,11 +357,12 @@ main .section-products .box-images figure button {
   border: none;
   border-radius: 10px;
   padding: 0.8rem 2rem;
-  transition: 0.3s;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 main .section-products .box-images figure button:hover {
   background-color: #16a34a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 main .section-feedback {
   display: flex;
@@ -428,4 +430,58 @@ main .section-feedback .container-feedback .box-message .users .username {
 main .section-feedback .container-feedback .box-message .users p {
   margin-top: 0;
   font-size: 1rem;
+}
+main .section-action {
+  background-color: #f3f5f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 45vh;
+}
+main .section-action h2 {
+  color: #1f2937;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+}
+main .section-action p {
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  width: 35%;
+}
+main .section-action .box-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+main .section-action .box-btn button {
+  background-color: #21c05c;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+main .section-action .box-btn button:hover {
+  background-color: #16a34a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+main .section-action .box-btn .white-btn {
+  background-color: #ffffff;
+  color: #21c05c;
+  border: solid 1px #21c05c;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+main .section-action .box-btn .white-btn:hover {
+  background-color: #21c05c;
+  color: #ffffff;
+  border: solid 1.5px #21c05c;
 }/*# sourceMappingURL=style.css.map */

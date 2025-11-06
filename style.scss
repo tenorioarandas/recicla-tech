@@ -77,7 +77,7 @@ header {
   background-color: $bg-lightgreen;
   border-radius: 10px;
   padding: 2rem;
-  transition: 0.3s;
+  transition: all 0.2s ease;
   cursor: pointer;
 
   .btn-text {
@@ -87,6 +87,7 @@ header {
 
 .btn-nav:hover {
   background-color: $bg-green;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -420,12 +421,13 @@ main {
           border: none;
           border-radius: 10px;
           padding: 0.8rem 2rem;
-          transition: 0.3s;
+          transition: all 0.2s ease;
           cursor: pointer;
         }
 
         button:hover {
           background-color: $bg-green;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
         }
       }
     }
@@ -506,6 +508,68 @@ main {
             font-size: 1rem;
           }
         }
+      }
+    }
+  }
+
+  .section-action {
+    background-color: $bg-lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 45vh;
+
+    h2 {
+      color: $primary-color;
+      font-family: $title-font;
+      font-size: 3.2rem;
+    }
+
+    p {
+      color: $secondary-color;
+      font-family: $subtitle-font;
+      font-size: 1.8rem;
+      width: 35%;
+    }
+
+    .box-btn {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+
+      button {
+        background-color: $bg-lightgreen;
+        color: #ffff;
+        font-family: $subtitle-font;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem 2rem;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: $bg-green;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .white-btn {
+        background-color: #ffffff;
+        color: $bg-lightgreen;
+        border: solid 1px $bg-lightgreen;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+
+      .white-btn:hover {
+        background-color: $bg-lightgreen;
+        color: #ffffff;
+        border: solid 1.5px $bg-lightgreen;
       }
     }
   }
