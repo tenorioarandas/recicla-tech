@@ -484,4 +484,16 @@ main .section-action .box-btn .white-btn:hover {
   background-color: #21c05c;
   color: #ffffff;
   border: solid 1.5px #21c05c;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  border: solid blue;
+  text-align: center;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */
